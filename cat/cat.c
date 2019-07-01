@@ -52,8 +52,8 @@ int main(int argc, char **argv)
 		for (int j = 0; output[j]; j++) {
 			printf("%s", output[j++]);
 		}
+		free(output);
 	}
 	
-	free(output);
 	exit(EXIT_SUCCESS);
 }
