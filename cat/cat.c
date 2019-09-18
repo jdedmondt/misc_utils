@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 	for (int i = 1; i < argc; i++) {
 		output = extract(argv[i]);
 		for (int j = 0; output[j]; j++) {
-			printf("%s", output[j++]);
+			printf("%s", output[j]);
 		}
 		free(output);
 	}
